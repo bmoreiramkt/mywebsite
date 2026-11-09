@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae3">
+  <meta name="description" content="Bruno Moreira — diretor de arte e designer gráfico em Santo André, SP. Projetos de identidade visual, campanhas e comunicação.">
+  <title>Bruno Moreira — Direção de Arte & Design</title>
+  <link rel="preconnect" href="https://www.behance.net">
+  <link rel="preconnect" href="https://mir-s3-cdn-cf.behance.net">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root{--paper:#eeeae3;--ink:#171716;--muted:#73716c;--line:#c7c2b9;--lime:#c5f260;--white:#f8f6f1;--serif:Georgia,'Times New Roman',serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
+    .wrap{width:min(1440px,calc(100% - 72px));margin:auto}.mono,.eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{font-size:16px;font-weight:800;letter-spacing:-.06em}.wordmark span{font-weight:400}.nav{display:flex;gap:34px;align-items:center;font-size:12px}.nav a{transition:opacity .2s}.nav a:hover{opacity:.55}.nav .contact{background:var(--ink);color:var(--white);padding:12px 18px;border-radius:50px}
+    .hero{padding:94px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:end}.hero h1{font-size:clamp(64px,10vw,154px);line-height:.83;letter-spacing:-.095em;font-weight:500;margin:30px 0 0;max-width:900px}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-.09em}.hero-aside{max-width:330px;margin:0 5% 10px auto}.hero-aside p{font-size:17px;line-height:1.55;letter-spacing:-.035em}.hero-aside .mono{color:var(--muted);line-height:1.8}.hero-mark{width:60px;height:60px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;margin-top:24px;font-size:26px}
+    .intro-strip{display:flex;justify-content:space-between;align-items:center;padding:19px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}.intro-strip p{font-size:13px;margin:0}.intro-strip .mono{color:var(--muted)}
+    .work{padding:92px 0 100px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.section-head h2{font-size:clamp(42px,6vw,86px);line-height:.9;letter-spacing:-.08em;font-weight:500;margin:12px 0 0}.section-head p{max-width:290px;font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 5px}.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:30px 20px}.project{grid-column:span 6;min-width:0}.project:nth-child(3n+2){grid-column:span 5}.project:nth-child(3n+3){grid-column:span 7}.frame{position:relative;background:#ded9d0;overflow:hidden;aspect-ratio:1.22;border-radius:2px}.frame iframe{border:0;width:100%;height:100%;display:block;background:#fff}.frame .fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(140deg,#d7d1c7,#f5f1e9);font-family:var(--serif);font-size:clamp(34px,6vw,82px);letter-spacing:-.08em}.frame iframe:not([src])+.fallback{display:grid}.project-meta{padding:12px 0 0;display:flex;justify-content:space-between;gap:10px;align-items:baseline}.project-title{font-size:17px;letter-spacing:-.045em;font-weight:600}.project-type{color:var(--muted);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase}.project-link{display:inline-block;margin-top:8px;color:var(--muted);font-size:11px}.project-link:hover{color:var(--ink)}.all-work{display:flex;justify-content:space-between;align-items:center;margin-top:52px;padding:20px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-size:13px}.all-work strong{font-size:18px;font-weight:500;letter-spacing:-.04em}
+    .about{background:var(--ink);color:var(--white);padding:92px 0 96px}.about-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:8%}.about h2{font-size:clamp(44px,6vw,82px);line-height:.94;letter-spacing:-.085em;font-weight:500;margin:17px 0}.about-copy{max-width:700px}.about-copy .lead{font-size:clamp(23px,3vw,40px);line-height:1.25;letter-spacing:-.06em;margin:0 0 36px}.about-copy p{font-size:14px;line-height:1.8;color:#c1bfb9;max-width:610px}.facts{margin-top:44px;border-top:1px solid #55534f;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:15px}.fact strong{font-family:var(--serif);font-weight:400;font-size:24px;display:block;margin-bottom:6px}.fact span{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;color:#aaa8a2}
+    .services{padding:88px 0 92px}.services h2{font-size:clamp(44px,6vw,84px);font-weight:500;letter-spacing:-.085em;margin:14px 0 46px}.service-list{border-top:1px solid var(--ink)}.service{display:grid;grid-template-columns:60px 1fr 1fr;align-items:center;padding:19px 0;border-bottom:1px solid var(--line);gap:18px}.service .num{font-family:'DM Mono',monospace;color:var(--muted);font-size:11px}.service strong{font-size:clamp(19px,2.4vw,30px);font-weight:500;letter-spacing:-.055em}.service span:last-child{font-size:12px;color:var(--muted)}
+    .cta{background:var(--lime);padding:75px 0}.cta-inner{display:flex;align-items:end;justify-content:space-between;gap:32px}.cta h2{font-size:clamp(48px,8vw,112px);line-height:.85;letter-spacing:-.09em;font-weight:500;margin:15px 0 0;max-width:850px}.cta a{background:var(--ink);color:var(--white);border-radius:50px;padding:17px 24px;white-space:nowrap;font-size:12px}.cta a:hover{background:#444}.cta .eyebrow{color:#545d38}
+    footer{background:var(--ink);color:var(--white);padding:25px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot .mono{color:#aaa8a2;font-size:9px}.social{display:flex;gap:22px;font-size:11px}
+    @media(max-width:760px){.wrap{width:calc(100% - 38px)}header{height:64px}.nav{gap:15px}.nav a:not(.contact){display:none}.hero{padding:70px 0 48px;grid-template-columns:1fr;gap:25px}.hero h1{font-size:clamp(65px,17vw,112px)}.hero-aside{margin:0;max-width:340px}.hero-aside p{font-size:15px}.hero-mark{position:absolute;right:22px;margin-top:12px;width:48px;height:48px}.intro-strip{align-items:start;gap:16px}.intro-strip p{max-width:65%}.work{padding:66px 0}.section-head{display:block}.section-head p{margin-top:16px}.projects{display:block}.project{margin:0 0 30px}.frame{aspect-ratio:.95}.project-title{font-size:15px}.about{padding:68px 0}.about-grid{grid-template-columns:1fr;gap:24px}.about h2{margin-bottom:0}.facts{grid-template-columns:1fr 1fr}.service{grid-template-columns:30px 1fr;gap:8px}.service span:last-child{grid-column:2}.services{padding:68px 0}.services h2{margin-bottom:30px}.cta{padding:62px 0}.cta-inner{align-items:start;flex-direction:column}.cta a{margin-top:6px}.foot{align-items:start;flex-direction:column}.social{order:-1}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="wordmark" href="#top" aria-label="Bruno Moreira, início">BRUNO<span>MOREIRA</span><sup>®</sup></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre</a><a href="#servicos">Especialidades</a><a class="contact" href="https://wa.me/5511989864326" target="_blank" rel="noreferrer">Vamos conversar ↗</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div><div class="eyebrow">Direção de arte · Design gráfico · Santo André, SP</div><h1>Ideias com<br><em>presença.</em></h1></div>
+      <div class="hero-aside"><p>Transformo estratégia em imagens que aproximam marcas das pessoas.</p><div class="mono">Mais de 15 anos criando para o mundo real e digital.<br>Disponível para novos projetos.</div><div class="hero-mark" aria-hidden="true">↘</div></div>
+    </section>
+    <div class="intro-strip wrap"><p>Identidade, campanhas e comunicação visual com intenção.</p><span class="mono">Portfólio selecionado · 2026</span></div>
+    <section class="work wrap" id="trabalhos">
+      <div class="section-head"><div><div class="eyebrow">01 / Seleção de projetos</div><h2>Trabalho que<br>fala por si.</h2></div><p>Uma seleção de projetos publicados no Behance. Abra cada trabalho para explorar as imagens e etapas originais.</p></div>
+      <div class="projects" id="projects" aria-live="polite"></div>
+      <a class="all-work" href="https://www.behance.net/bm_marketing" target="_blank" rel="noreferrer"><span>Mais projetos, estudos e processos</span><strong>Ver perfil no Behance ↗</strong></a>
+    </section>
+    <section class="about" id="sobre"><div class="wrap about-grid"><div><div class="eyebrow">02 / Sobre</div><h2>Bruno<br>Moreira</h2></div><div class="about-copy"><p class="lead">Diretor de arte e designer gráfico. Crio campanhas que conectam boas ideias à vida cotidiana.</p><p>Com mais de 15 anos de atuação em publicidade, desenvolvo campanhas online e offline e projetos de design gráfico para marcas, produtos e pessoas. Sou formado pela Escola Panamericana de Arte e Design e trabalho a partir de Santo André, conectando estratégia, conceito e execução visual.</p><div class="facts"><div class="fact"><strong>15+</strong><span>Anos de experiência</span></div><div class="fact"><strong>Online<br>& offline</strong><span>Direção de arte</span></div><div class="fact"><strong>SP</strong><span>Santo André, Brasil</span></div></div></div></div></section>
+    <section class="services wrap" id="servicos"><div class="eyebrow">03 / O que faço</div><h2>Da ideia à imagem.</h2><div class="service-list"><div class="service"><span class="num">01</span><strong>Direção de arte</strong><span>Conceito visual para marcas, campanhas e conteúdo.</span></div><div class="service"><span class="num">02</span><strong>Identidade visual</strong><span>Sistemas gráficos consistentes, do logo às aplicações.</span></div><div class="service"><span class="num">03</span><strong>Campanhas & social</strong><span>Peças para comunicação online, offline e redes sociais.</span></div><div class="service"><span class="num">04</span><strong>Design editorial</strong><span>Apresentações, cardápios e materiais impressos.</span></div></div></section>
+    <section class="cta"><div class="wrap cta-inner"><div><div class="eyebrow">Tem um projeto em mente?</div><h2>Vamos criar<br>algo marcante.</h2></div><a href="https://wa.me/5511989864326?text=Oi%20Bruno%2C%20vim%20pelo%20seu%20portf%C3%B3lio." target="_blank" rel="noreferrer">Falar com o Bruno no WhatsApp ↗</a></div></section>
+  </main>
+  <footer><div class="wrap foot"><a class="wordmark" href="#top">BRUNO<span>MOREIRA</span><sup>®</sup></a><div class="social"><a href="https://www.behance.net/bm_marketing" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://wa.me/5511989864326" target="_blank" rel="noreferrer">WhatsApp ↗</a></div><span class="mono">© <span id="year"></span> Bruno Moreira · Santo André, Brasil</span></div></footer>
+  <script>
+    const projects = [
+      {id:'193295883', title:'Daniela Marcos Barone — Advogada', category:'Identidade visual', slug:'Daniela-Marcos-Barone-Advogada'},
+      {id:'146989943', title:'Melhores do ano 2021', category:'Direção de arte', slug:'Melhores-do-ano-2021'},
+      {id:'56192793', title:'Social Media | BestPay', category:'Campanha digital', slug:'SOCIAL-MEDIA-BestPay'},
+      {id:'83783131', title:'Health Care', category:'Comunicação visual', slug:'Health-Care'},
+      {id:'85630005', title:'Na Oito | Bar e Restaurante', category:'Identidade visual', slug:'Na-Oito-Bar-e-Restaurante'},
+      {id:'66690331', title:'Campanha — The French Co.', category:'Campanha', slug:'Campanha-The-French-Co'},
+      {id:'42737761', title:'Paranapiacaba — Parque Nascentes', category:'Campanha institucional', slug:'Paranapiacaba-Parque-Natural-Municipal-Nascentes'},
+      {id:'92963373', title:'Cardápio editável em PowerPoint', category:'Design editorial', slug:'Cardapio-Editavel-em-Power-Point'},
+      {id:'38571915', title:'7 Comíveis e Bebíveis', category:'Identidade visual', slug:'Cartao-de-Visitas-e-Cardapios-7-Comiveis-e-Bebiveis'}
+    ];
+    const container = document.getElementById('projects');
+    projects.forEach((project, index) => {
+      const article = document.createElement('article'); article.className = 'project';
+      const href = `https://www.behance.net/gallery/${project.id}/${project.slug}`;
+      article.innerHTML = `<a class="frame" href="${href}" target="_blank" rel="noreferrer" aria-label="Abrir ${project.title} no Behance"><iframe title="${project.title} — projeto completo no Behance" loading="lazy" src="https://www.behance.net/embed/project/${project.id}?ilo0=1" allowfullscreen></iframe><span class="fallback" aria-hidden="true">${String(index+1).padStart(2,'0')}</span></a><div class="project-meta"><span class="project-title">${project.title}</span><span class="project-type">${project.category}</span></div><a class="project-link" href="${href}" target="_blank" rel="noreferrer">Explorar projeto ↗</a>`;
+      container.appendChild(article);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
