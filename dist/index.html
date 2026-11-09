@@ -48,21 +48,21 @@
   <footer><div class="wrap foot"><a class="wordmark" href="#top">BRUNO<span>MOREIRA</span><sup>®</sup></a><div class="social"><a href="https://www.behance.net/bm_marketing" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://wa.me/5511989864326" target="_blank" rel="noreferrer">WhatsApp ↗</a></div><span class="mono">© <span id="year"></span> Bruno Moreira · Santo André, Brasil</span></div></footer>
   <script>
     const projects = [
-      {id:'193295883', title:'Daniela Marcos Barone — Advogada', category:'Identidade visual', slug:'Daniela-Marcos-Barone-Advogada'},
-      {id:'146989943', title:'Melhores do ano 2021', category:'Direção de arte', slug:'Melhores-do-ano-2021'},
-      {id:'56192793', title:'Social Media | BestPay', category:'Campanha digital', slug:'SOCIAL-MEDIA-BestPay'},
-      {id:'83783131', title:'Health Care', category:'Comunicação visual', slug:'Health-Care'},
-      {id:'85630005', title:'Na Oito | Bar e Restaurante', category:'Identidade visual', slug:'Na-Oito-Bar-e-Restaurante'},
-      {id:'66690331', title:'Campanha — The French Co.', category:'Campanha', slug:'Campanha-The-French-Co'},
-      {id:'42737761', title:'Paranapiacaba — Parque Nascentes', category:'Campanha institucional', slug:'Paranapiacaba-Parque-Natural-Municipal-Nascentes'},
-      {id:'92963373', title:'Cardápio editável em PowerPoint', category:'Design editorial', slug:'Cardapio-Editavel-em-Power-Point'},
-      {id:'38571915', title:'7 Comíveis e Bebíveis', category:'Identidade visual', slug:'Cartao-de-Visitas-e-Cardapios-7-Comiveis-e-Bebiveis'}
+      {id:'255686489', module:'1489850675', title:'Social Media | LEMCA', category:'Direção de arte', slug:'Social-Media-LEMCA'},
+      {id:'66690331', module:'428582013', title:'Campanha — The French Co.', category:'Campanha', slug:'Campanha-The-French-Co'},
+      {id:'56192793', module:'390454415', title:'Social Media | BestPay', category:'Campanha digital', slug:'SOCIAL-MEDIA-BestPay'},
+      {id:'249750877', module:'1447002741', title:'Território VW 2025', category:'Design digital', slug:'UIUX-Design-Plataforma-Digital-Territorio-VW-2025'},
+      {id:'249750159', module:'1446993701', title:'Vino e Formaggio 2024', category:'Identidade visual', slug:'Branding-IDV-Festival-Vino-e-Formaggio-2024'},
+      {id:'193295883', module:'1094026895', title:'Daniela Marcos Barone — Advocacia', category:'Identidade visual', slug:'ID-Visual-Daniela-Marcos-Barone-Advocacia'},
+      {id:'85630005', module:'544210779', title:'Na Oito | Bar e Restaurante', category:'Identidade visual', slug:'Na-Oito-Bar-e-Restaurante'},
+      {id:'251712297', module:'1460834947', title:'Identidade Visual & Direção de Arte', category:'Branding', slug:'Identidade-Visual-Direcao-de-Arte'},
+      {id:'42737761', module:'257086745', title:'Paranapiacaba — Parque Nascentes', category:'Campanha institucional', slug:'Paranapiacaba-Parque-Natural-Municipal-Nascentes'}
     ];
     const container = document.getElementById('projects');
     projects.forEach((project, index) => {
       const article = document.createElement('article'); article.className = 'project';
       const href = `https://www.behance.net/gallery/${project.id}/${project.slug}`;
-      article.innerHTML = `<div class="frame"><iframe title="${project.title} — projeto completo no Behance" loading="lazy" src="https://www.behance.net/embed/project/${project.id}?ilo0=1" allowfullscreen></iframe></div><div class="project-meta"><span class="project-title">${project.title}</span><span class="project-type">${project.category}</span></div><a class="project-link" href="${href}" target="_blank" rel="noreferrer">Explorar projeto ↗</a>`;
+      article.innerHTML = `<div class="frame"><iframe title="${project.title} — imagem do projeto no Behance" loading="lazy" src="https://www.behance.net/gallery/${project.id}/${project.slug}/modules/${project.module}" allowfullscreen></iframe></div><div class="project-meta"><span class="project-title">${project.title}</span><span class="project-type">${project.category}</span></div><a class="project-link" href="${href}" target="_blank" rel="noreferrer">Explorar projeto ↗</a>`;
       container.appendChild(article);
     });
     document.getElementById('year').textContent = new Date().getFullYear();
