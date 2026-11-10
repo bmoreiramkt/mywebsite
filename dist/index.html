@@ -68,7 +68,7 @@
     projects.forEach((project, index) => {
       const article = document.createElement('article'); article.className = 'project'; article.dataset.filter = project.filter;
       const moduleHref = `https://www.behance.net/gallery/${project.id}/${project.slug}/modules/${project.module}`;
-      const preview = project.image ? `<span class="lemca-art"><img src="./assets/lemca-interno.png" alt="Peça interna do projeto LEMCA: espeto de jardim" loading="eager"></span>` : `<span class="placeholder-art" style="--tile:${project.tone}"><span class="eyebrow">Projeto no Behance</span><strong>${project.title}</strong><span class="preview-action">Ver peça interna ↗</span></span>`;
+      const preview = project.image ? `<span class="lemca-art"><img src="./assets/lemca-social-interno.webp" alt="Peça interna do projeto LEMCA: apresentação de posts e feed" loading="eager"></span>` : `<span class="placeholder-art" style="--tile:${project.tone}"><span class="eyebrow">Projeto no Behance</span><strong>${project.title}</strong><span class="preview-action">Ver peça interna ↗</span></span>`;
       article.innerHTML = `<a class="frame work-preview" href="${moduleHref}" target="_blank" rel="noreferrer" aria-label="Ver imagem interna de ${project.title} no Behance">${preview}</a><div class="project-meta"><span class="project-title">${project.title}</span><span class="project-type">${project.category}</span></div><a class="project-link" href="${moduleHref}" target="_blank" rel="noreferrer">Ver peça interna ↗</a>`;
       container.appendChild(article);
     });
